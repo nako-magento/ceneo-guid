@@ -1,0 +1,15 @@
+<?php /* @var $block \Nako\CeneoGuid\Block\CeneoGuid */ ?>
+<?php
+if ($block->isModuleEnabled()) :
+    ?>
+    <script type="text/javascript">
+        ceneo_client_email = "<?= $block->getCustomerEmail() ?>";
+        ceneo_order_id = "<?= $block->getOrderId() ?>";
+        ceneo_shop_product_ids = "<?= $block->getCeneoItemsSku() ?>";
+        ceneo_work_days_to_send_questionnaire = <?=$block->getCeneoWorkDaysToSendQuestionnaire() ?>;
+    </script>
+    <script type="text/javascript"
+            src="https://ssl.ceneo.pl/transactions/track/v2/script.js?accountGuid=<?= $block->getCeneoGuidKey() ?>">
+    </script>
+<?php
+endif; ?>

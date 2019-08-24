@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<body>
+    <referenceContainer name="order.success.additional.info">
+        <block class="Nako\CeneoGuid\Block\CeneoGuid"
+               name="nakoceneoguid.order.success"
+               template="Nako_CeneoGuid::order/ceneoguid.phtml"
+               after="-">
+        </block>
+    </referenceContainer>
+</body>

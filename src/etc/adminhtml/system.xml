@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="nako" translate="label" sortOrder="30">
+            <label>Nako</label>
+        </tab>
+        <section id="nako_ceneoguid" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Ceneo Guid</label>
+            <tab>nako</tab>
+            <resource>Nako_CeneoGuid::ceneoguid_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="key" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Ceneo Guid Account</label>
+                </field>
+                <field id="workdays_to_send_questionnaire" translate="label" type="text" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Workdays to Send Questionnaire</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -72,8 +72,9 @@ class CeneoGuid extends Template
         $items = $this->checkoutSession->getLastRealOrder()->getAllItems();
         $ceneoProductSku = '';
         foreach ($items as $item) {
-            $ceneoProductSku .= $item->getSku() . '#';
+            $ceneoProductSku .= '#' . $item->getSku();
         }
+        $ceneoProductSku .= '#';
 
         return $ceneoProductSku;
     }

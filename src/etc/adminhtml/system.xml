@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <tab id="nako" translate="label" sortOrder="30">
-            <label>Nako</label>
+            <label>Nako Extensions</label>
         </tab>
         <section id="nako_ceneoguid" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
@@ -17,9 +17,17 @@
                 </field>
                 <field id="key" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Ceneo Guid Account</label>
+                    <depends>
+                        <field id="nako_ceneoguid/general/enable">1</field>
+                    </depends>
+                    <validate>required-entry</validate>
                 </field>
                 <field id="workdays_to_send_questionnaire" translate="label" type="text" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1">
                     <label>Workdays to Send Questionnaire</label>
+                    <depends>
+                        <field id="nako_ceneoguid/general/enable">1</field>
+                    </depends>
+                    <validate>validate-digits</validate>
                 </field>
             </group>
         </section>

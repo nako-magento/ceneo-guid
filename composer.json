@@ -30,13 +30,5 @@
         "psr-4": {
             "Nako\\CeneoGuid\\": "src/"
         }
-    },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "Nako/CeneoGuid"
-            ]
-        ]
     }
 }

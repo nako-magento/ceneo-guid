@@ -1,13 +1,11 @@
 {
     "name": "nako/ceneoguid",
     "description": "Magento 2 ceneo guid module",
-    "keywords": [
-        "Magento 2, nako, ceneoguid, ceneo"
-    ],
+    "keywords": [ "Magento 2", "nako", "ceneoguid", "ceneo" ],
     "authors": [
         {
             "name": "Nako Team Magento",
-            "email": "nako.magento@gmail.com"
+            "homepage": "https://github.com/nako-magento"
         }
     ],
     "require": {
